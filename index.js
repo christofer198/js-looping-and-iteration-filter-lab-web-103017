@@ -20,5 +20,12 @@ function fuzzyMatch(drivers, name){
 }
 
 function matchName(drivers, name) {
-  return drivers[name] == name
+  const newObj = new Object();
+  
+  for (const each in drivers){
+    if(each == name){
+      newObj[name] = drivers[name]
+    }
+  }
+  return newObj;
 }
