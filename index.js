@@ -9,6 +9,12 @@ function findMatching(drivers, name){
   return newArray;
 }
 
-function fuzzyMatch(){
-
+function fuzzyMatch(drivers, name){
+  const newArray = [];
+  for(i = 0; i < drivers.length; i++){
+    if(name == drivers[i].slice(0, name.length)){
+      newArray.push(drivers[i])
+    }
+  }
+  return newArray
 }
