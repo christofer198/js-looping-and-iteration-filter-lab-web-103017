@@ -18,3 +18,7 @@ function fuzzyMatch(drivers, name){
   }
   return newArray
 }
+
+function matchName(drivers, name) {
+  
+}
