@@ -19,13 +19,12 @@ function fuzzyMatch(drivers, name){
   return newArray
 }
 
-function matchName(drivers, name) {
-  
-  let output = [];
-    for (const driver of drivers){
-      if (name === driver.name) {
-        output.push(driver)
-      }
+function matchName(drivers, nam) {
+  const output = [];
+  for (const driver of drivers){
+    if (nam === driver.nam) {
+      output.push(driver)
     }
-    return output
+  }
+  return output
 }
